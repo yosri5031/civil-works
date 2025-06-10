@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Détaillés - CivilWorks Pro</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcivilworks4379back.builtwithrocket.new&_v=0.1.2"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-sm border-b border-subtle shadow-card">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Company Logo -->
+                <div class="flex items-center">
+                    <svg class="h-10 w-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <rect x="4" y="20" width="32" height="16" rx="2"/>
+                        <rect x="8" y="12" width="24" height="8" rx="1"/>
+                        <rect x="12" y="4" width="16" height="8" rx="1"/>
+                        <circle cx="32" cy="32" r="2"/>
+                        <circle cx="8" cy="32" r="2"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-bold text-primary">CivilWorks Pro</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="landing_page.html" class="text-text-secondary hover:text-primary transition-micro">Accueil</a>
+                    <a href="service_portfolio_detail.html" class="text-primary font-medium">Services</a>
+                    <a href="landing_page.html#projets" class="text-text-secondary hover:text-primary transition-micro">Projets</a>
+                    <a href="landing_page.html#temoignages" class="text-text-secondary hover:text-primary transition-micro">Témoignages</a>
+                    <a href="contact_information.html" class="text-text-secondary hover:text-primary transition-micro">Contact</a>
+                    <a href="lead_generation_questionnaire.html" class="btn-primary">Devis Gratuit</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-text-secondary hover:text-primary hover:bg-secondary-50 transition-micro">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="landing_page.html" class="text-text-secondary hover:text-primary transition-micro py-2">Accueil</a>
+                    <a href="service_portfolio_detail.html" class="text-primary font-medium py-2">Services</a>
+                    <a href="landing_page.html#projets" class="text-text-secondary hover:text-primary transition-micro py-2">Projets</a>
+                    <a href="landing_page.html#temoignages" class="text-text-secondary hover:text-primary transition-micro py-2">Témoignages</a>
+                    <a href="contact_information.html" class="text-text-secondary hover:text-primary transition-micro py-2">Contact</a>
+                    <a href="lead_generation_questionnaire.html" class="btn-primary mt-2 text-center">Devis Gratuit</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Section -->
+    <section class="pt-20 pb-4 bg-surface border-b border-subtle">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center space-x-2 text-sm text-text-secondary">
+                <a href="landing_page.html" class="hover:text-primary transition-micro">Accueil</a>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-primary font-medium">Services</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="relative py-16 lg:py-24 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Services d'ingénierie civile" class="w-full h-full object-cover" onerror="this.src='https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+        </div>
+        
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-primary-800/70 z-10"></div>
+
+        <!-- Hero Content -->
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in">
+                <h1 class="text-fluid-3xl font-bold text-white mb-6 leading-tight">
+                    Nos Services d'Expertise<br />
+                    <span class="text-accent">Ingénierie Civile</span>
+                </h1>
+                <p class="text-fluid-lg text-white/90 mb-8 max-w-3xl mx-auto">
+                    Découvrez notre gamme complète de services spécialisés en terrassement, fondations, 
+                    fabrication de hangars et construction de bâtiments industriels.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="lead_generation_questionnaire.html" class="btn-accent text-lg px-8 py-4 inline-block">
+                        Demander un Devis
+                    </a>
+                    <a href="contact_information.html" class="btn-secondary text-lg px-8 py-4 inline-block">
+                        Nous Contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="py-16 lg:py-24 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-12">
+                <!-- Desktop Sidebar Navigation -->
+                <div class="hidden lg:block lg:col-span-3">
+                    <div class="sticky top-24">
+                        <div class="card p-6">
+                            <h3 class="text-lg font-semibold text-text-primary mb-4">Navigation Rapide</h3>
+                            <nav class="space-y-2">
+                                <a href="#terrassement" class="service-nav-link block py-2 px-3 rounded-md text-text-secondary hover:text-primary hover:bg-primary-50 transition-micro">Terrassement</a>
+                                <a href="#fondations" class="service-nav-link block py-2 px-3 rounded-md text-text-secondary hover:text-primary hover:bg-primary-50 transition-micro">Fondations</a>
+                                <a href="#hangars" class="service-nav-link block py-2 px-3 rounded-md text-text-secondary hover:text-primary hover:bg-primary-50 transition-micro">Hangars</a>
+                                <a href="#batiments" class="service-nav-link block py-2 px-3 rounded-md text-text-secondary hover:text-primary hover:bg-primary-50 transition-micro">Bâtiments Industriels</a>
+                                <a href="#construction" class="service-nav-link block py-2 px-3 rounded-md text-text-secondary hover:text-primary hover:bg-primary-50 transition-micro">Construction Générale</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="lg:col-span-9">
+                    <!-- Terrassement & Excavation -->
+                    <div id="terrassement" class="service-section mb-16 fade-in">
+                        <div class="card p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl font-bold text-text-primary">Terrassement & Excavation</h2>
+                                    <p class="text-text-secondary">Préparation professionnelle de terrain</p>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary mb-4">Nos Capacités</h3>
+                                    <ul class="space-y-2 text-text-secondary">
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Excavation de grande envergure
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Nivellement et aménagement
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Gestion des eaux pluviales
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Déblais et remblais
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary mb-4">Équipements</h3>
+                                    <ul class="space-y-2 text-text-secondary">
+                                        <li>• Pelles hydrauliques 20-40 tonnes</li>
+                                        <li>• Bulldozers et niveleuses</li>
+                                        <li>• Compacteurs vibrants</li>
+                                        <li>• Camions-bennes articulés</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Technical Specifications Accordion -->
+                            <div class="border-t border-subtle pt-6">
+                                <button class="accordion-toggle w-full flex justify-between items-center py-3 text-left" data-target="terrassement-specs">
+                                    <span class="text-lg font-semibold text-text-primary">Spécifications Techniques</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div id="terrassement-specs" class="accordion-content hidden mt-4 p-4 bg-secondary-50 rounded-lg">
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-2">Capacités d'excavation</h4>
+                                            <p class="text-text-secondary text-sm">Profondeur maximale : 15 mètres<br />
+                                            Volume journalier : 2000 m³<br />
+                                            Précision GPS : ±2 cm</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-2">Délais typiques</h4>
+                                            <p class="text-text-secondary text-sm">Projet 5000 m² : 5-7 jours<br />
+                                            Projet 20000 m² : 3-4 semaines<br />
+                                            Inclut nivellement final</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fondations -->
+                    <div id="fondations" class="service-section mb-16 fade-in">
+                        <div class="card p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl font-bold text-text-primary">Fondations Spécialisées</h2>
+                                    <p class="text-text-secondary">Solutions de fondations robustes</p>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary mb-4">Types de Fondations</h3>
+                                    <ul class="space-y-2 text-text-secondary">
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Fondations superficielles
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Pieux forés et battus
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Radiers et longrines
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Fondations spéciales
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary mb-4">Charges Supportées</h3>
+                                    <ul class="space-y-2 text-text-secondary">
+                                        <li>• Charges jusqu'à 500 tonnes/m²</li>
+                                        <li>• Structures industrielles lourdes</li>
+                                        <li>• Équipements de production</li>
+                                        <li>• Ponts roulants et grues</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-subtle pt-6">
+                                <button class="accordion-toggle w-full flex justify-between items-center py-3 text-left" data-target="fondations-specs">
+                                    <span class="text-lg font-semibold text-text-primary">Spécifications Techniques</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div id="fondations-specs" class="accordion-content hidden mt-4 p-4 bg-secondary-50 rounded-lg">
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-2">Profondeurs</h4>
+                                            <p class="text-text-secondary text-sm">Fondations superficielles : 0.5-3m<br />
+                                            Pieux : jusqu'à 25m<br />
+                                            Béton C25/30 à C35/45</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-2">Délais de réalisation</h4>
+                                            <p class="text-text-secondary text-sm">Étude géotechnique : 1-2 semaines<br />
+                                            Exécution : 2-6 semaines<br />
+                                            Selon complexité du projet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fabrication de Hangars -->
+                    <div id="hangars" class="service-section mb-16 fade-in">
+                        <div class="card p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                                        <path d="M7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl font-bold text-text-primary">Fabrication de Hangars</h2>
+                                    <p class="text-text-secondary">Structures métalliques sur mesure</p>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary mb-4">Types de Hangars</h3>
+                                    <ul class="space-y-2 text-text-secondary">
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Hangars agricoles
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Hangars de stockage
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Hangars aéronautiques
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Hangars industriels
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary mb-4">Dimensions</h3>
+                                    <ul class="space-y-2 text-text-secondary">
+                                        <li>• Portées jusqu'à 60 mètres</li>
+                                        <li>• Hauteurs jusqu'à 20 mètres</li>
+                                        <li>• Longueurs illimitées</li>
+                                        <li>• Surfaces de 500 à 50 000 m²</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-subtle pt-6">
+                                <button class="accordion-toggle w-full flex justify-between items-center py-3 text-left" data-target="hangars-specs">
+                                    <span class="text-lg font-semibold text-text-primary">Spécifications Techniques</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div id="hangars-specs" class="accordion-content hidden mt-4 p-4 bg-secondary-50 rounded-lg">
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-2">Matériaux</h4>
+                                            <p class="text-text-secondary text-sm">Acier galvanisé S355<br />
+                                            Bardage isolé ou simple peau<br />
+                                            Couverture étanche garantie 20 ans</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-2">Délais de livraison</h4>
+                                            <p class="text-text-secondary text-sm">Étude : 2-3 semaines<br />
+                                            Fabrication : 4-8 semaines<br />
+                                            Montage : 1-4 semaines</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bâtiments Industriels -->
+                    <div id="batiments" class="service-section mb-16 fade-in">
+                        <div class="card p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl font-bold text-text-primary">Bâtiments Industriels</h2>
+                                    <p class="text-text-secondary">Constructions industrielles complètes</p>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary mb-4">Types de Bâtiments</h3>
+                                    <ul class="space-y-2 text-text-secondary">
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Usines de production
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Entrepôts logistiques
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Centres de distribution
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Ateliers spécialisés
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary mb-4">Équipements Intégrés</h3>
+                                    <ul class="space-y-2 text-text-secondary">
+                                        <li>• Ponts roulants et grues</li>
+                                        <li>• Systèmes de ventilation</li>
+                                        <li>• Éclairage LED industriel</li>
+                                        <li>• Réseaux électriques HT/BT</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-subtle pt-6">
+                                <button class="accordion-toggle w-full flex justify-between items-center py-3 text-left" data-target="batiments-specs">
+                                    <span class="text-lg font-semibold text-text-primary">Spécifications Techniques</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div id="batiments-specs" class="accordion-content hidden mt-4 p-4 bg-secondary-50 rounded-lg">
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-2">Performance énergétique</h4>
+                                            <p class="text-text-secondary text-sm">Isolation thermique RT2020<br />
+                                            Étanchéité à l'air n50 < 1.5<br />
+                                            Certification HQE possible</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-2">Délais de construction</h4>
+                                            <p class="text-text-secondary text-sm">5000 m² : 6-8 mois<br />
+                                            20000 m² : 12-18 mois<br />
+                                            Livraison clé en main</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Construction Générale -->
+                    <div id="construction" class="service-section mb-16 fade-in">
+                        <div class="card p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl font-bold text-text-primary">Construction Générale</h2>
+                                    <p class="text-text-secondary">Solutions complètes de construction</p>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary mb-4">Domaines d'Intervention</h3>
+                                    <ul class="space-y-2 text-text-secondary">
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Bâtiments commerciaux
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Infrastructures publiques
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Rénovations industrielles
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Extensions de bâtiments
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-text-primary mb-4">Services Associés</h3>
+                                    <ul class="space-y-2 text-text-secondary">
+                                        <li>• Maîtrise d'œuvre complète</li>
+                                        <li>• Coordination des corps d'état</li>
+                                        <li>• Suivi de chantier</li>
+                                        <li>• Garanties décennales</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-subtle pt-6">
+                                <button class="accordion-toggle w-full flex justify-between items-center py-3 text-left" data-target="construction-specs">
+                                    <span class="text-lg font-semibold text-text-primary">Spécifications Techniques</span>
+                                    <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div id="construction-specs" class="accordion-content hidden mt-4 p-4 bg-secondary-50 rounded-lg">
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-2">Certifications</h4>
+                                            <p class="text-text-secondary text-sm">Qualibat RGE<br />
+                                            ISO 9001 et 14001<br />
+                                            Certification MASE</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-2">Garanties</h4>
+                                            <p class="text-text-secondary text-sm">Garantie décennale<br />
+                                            Assurance tous risques chantier<br />
+                                            SAV 24h/24</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section class="py-16 lg:py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-fluid-2xl font-bold text-text-primary mb-4">
+                    Galerie de Projets
+                </h2>
+                <p class="text-fluid-base text-text-secondary max-w-3xl mx-auto">
+                    Découvrez nos réalisations récentes à travers une sélection de projets représentatifs
+                </p>
+            </div>
+
+            <!-- Mobile: Single Column -->
+            <div class="md:hidden space-y-6">
+                <div class="gallery-item card overflow-hidden cursor-pointer" data-image="https://images.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg" data-title="Hangar Industriel - Logistique Express" data-details="5000 m² • Livré en 2024 • Portée 40m">
+                    <img src="https://images.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg" alt="Hangar industriel moderne" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-text-primary mb-1">Hangar Industriel - Logistique Express</h3>
+                        <p class="text-sm text-text-secondary">5000 m² • Livré en 2024 • Portée 40m</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item card overflow-hidden cursor-pointer" data-image="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg" data-title="Fondations Spéciales - TechnoFab" data-details="Fondations 15m • Charges 300T/m² • 2024">
+                    <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg" alt="Fondations industrielles" class="w-full h-48 object-cover" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg'; this.onerror=null;" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-text-primary mb-1">Fondations Spéciales - TechnoFab</h3>
+                        <p class="text-sm text-text-secondary">Fondations 15m • Charges 300T/m² • 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item card overflow-hidden cursor-pointer" data-image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2940&auto=format&fit=crop" data-title="Terrassement Complexe - Zone Industrielle" data-details="50 hectares • Gestion eaux pluviales • 2023">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2940&auto=format&fit=crop" alt="Terrassement de grande envergure" class="w-full h-48 object-cover" onerror="this.src='https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg'; this.onerror=null;" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-text-primary mb-1">Terrassement Complexe - Zone Industrielle</h3>
+                        <p class="text-sm text-text-secondary">50 hectares • Gestion eaux pluviales • 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop: Grid Layout -->
+            <div class="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="gallery-item card overflow-hidden cursor-pointer fade-in" data-image="https://images.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg" data-title="Hangar Industriel - Logistique Express" data-details="5000 m² • Livré en 2024 • Portée 40m sans appuis intermédiaires">
+                    <img src="https://images.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg" alt="Hangar industriel moderne" class="w-full h-64 object-cover transition-transform hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary-800/0 hover:bg-primary-800/70 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white transform translate-y-full hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-lg font-semibold mb-2">Hangar Industriel - Logistique Express</h3>
+                            <p class="text-sm opacity-90">5000 m² • Livré en 2024 • Portée 40m sans appuis intermédiaires</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item card overflow-hidden cursor-pointer fade-in" data-image="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg" data-title="Fondations Spéciales - TechnoFab" data-details="Fondations profondes 15m • Charges 300T/m² • Livré en 2024">
+                    <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg" alt="Fondations industrielles" class="w-full h-64 object-cover transition-transform hover:scale-105" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary-800/0 hover:bg-primary-800/70 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white transform translate-y-full hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-lg font-semibold mb-2">Fondations Spéciales - TechnoFab</h3>
+                            <p class="text-sm opacity-90">Fondations profondes 15m • Charges 300T/m² • Livré en 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item card overflow-hidden cursor-pointer fade-in" data-image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2940&auto=format&fit=crop" data-title="Terrassement Complexe - Zone Industrielle" data-details="50 hectares • Gestion eaux pluviales • Livré en 2023">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2940&auto=format&fit=crop" alt="Terrassement de grande envergure" class="w-full h-64 object-cover transition-transform hover:scale-105" onerror="this.src='https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary-800/0 hover:bg-primary-800/70 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white transform translate-y-full hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-lg font-semibold mb-2">Terrassement Complexe - Zone Industrielle</h3>
+                            <p class="text-sm opacity-90">50 hectares • Gestion eaux pluviales • Livré en 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item card overflow-hidden cursor-pointer fade-in" data-image="https://images.pixabay.com/photo/2017/08/10/02/05/tiles-2619332_1280.jpg" data-title="Assemblage Métallique - AeroTech" data-details="Charpente complexe • Portée 60m • Assemblage de précision">
+                    <img src="https://images.pixabay.com/photo/2017/08/10/02/05/tiles-2619332_1280.jpg" alt="Assemblage de structure métallique" class="w-full h-64 object-cover transition-transform hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary-800/0 hover:bg-primary-800/70 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white transform translate-y-full hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-lg font-semibold mb-2">Assemblage Métallique - AeroTech</h3>
+                            <p class="text-sm opacity-90">Charpente complexe • Portée 60m • Assemblage de précision</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item card overflow-hidden cursor-pointer fade-in" data-image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2940&auto=format&fit=crop" data-title="Complexe Industriel - Production Moderne" data-details="15000 m² • Livraison clé en main • Équipements intégrés">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2940&auto=format&fit=crop" alt="Bâtiment industriel terminé" class="w-full h-64 object-cover transition-transform hover:scale-105" onerror="this.src='https://images.pixabay.com/photo/2017/08/10/02/05/tiles-2619332_1280.jpg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary-800/0 hover:bg-primary-800/70 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white transform translate-y-full hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-lg font-semibold mb-2">Complexe Industriel - Production Moderne</h3>
+                            <p class="text-sm opacity-90">15000 m² • Livraison clé en main • Équipements intégrés</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item card overflow-hidden cursor-pointer fade-in" data-image="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg" data-title="Entrepôt Logistique - Distribution Plus" data-details="25000 m² • Quais de chargement • Automatisation">
+                    <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg" alt="Entrepôt logistique moderne" class="w-full h-64 object-cover transition-transform hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary-800/0 hover:bg-primary-800/70 transition-all duration-300 flex items-end">
+                        <div class="p-6 text-white transform translate-y-full hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-lg font-semibold mb-2">Entrepôt Logistique - Distribution Plus</h3>
+                            <p class="text-sm opacity-90">25000 m² • Quais de chargement • Automatisation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section class="py-16 lg:py-24 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-fluid-2xl font-bold text-text-primary mb-4">
+                    Témoignages Clients
+                </h2>
+                <p class="text-fluid-base text-text-secondary max-w-3xl mx-auto">
+                    L'avis de nos clients sur nos services spécialisés
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6 fade-in">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-text-primary mb-4 italic">
+                        "Expertise remarquable en terrassement. L'équipe a géré parfaitement notre projet de 30 hectares avec des contraintes géotechniques complexes."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Portrait de Jean Dubois" class="w-10 h-10 rounded-full object-cover mr-3" onerror="this.src='https://images.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_150.png'; this.onerror=null;" />
+                        <div>
+                            <div class="font-semibold text-text-primary text-sm">Jean Dubois</div>
+                            <div class="text-xs text-text-secondary">Directeur Technique, Logistique Express</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-6 fade-in">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-text-primary mb-4 italic">
+                        "Fabrication de hangar de qualité exceptionnelle. Respect des délais et finitions parfaites. Je recommande vivement CivilWorks Pro."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Portrait de Marie Laurent" class="w-10 h-10 rounded-full object-cover mr-3" onerror="this.src='https://images.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_150.png'; this.onerror=null;" />
+                        <div>
+                            <div class="font-semibold text-text-primary text-sm">Marie Laurent</div>
+                            <div class="text-xs text-text-secondary">Ingénieure, TechnoFab Industries</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-6 fade-in">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-text-primary mb-4 italic">
+                        "Fondations spéciales réalisées dans les règles de l'art. Équipe professionnelle et réactive. Projet livré en avance sur le planning."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Portrait de Pierre Martin" class="w-10 h-10 rounded-full object-cover mr-3" onerror="this.src='https://images.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_150.png'; this.onerror=null;" />
+                        <div>
+                            <div class="font-semibold text-text-primary text-sm">Pierre Martin</div>
+                            <div class="text-xs text-text-secondary">PDG, Construction Moderne</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service-Specific Contact Section -->
+    <section class="py-16 lg:py-24 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h2 class="text-fluid-2xl font-bold mb-6">
+                        Besoin d'un Devis Personnalisé ?
+                    </h2>
+                    <p class="text-fluid-lg mb-8 opacity-90">
+                        Contactez nos experts pour discuter de votre projet spécifique. 
+                        Nous vous accompagnons de l'étude à la réalisation.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-accent mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>contact@civilworkspro.fr</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-accent mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span>+33 1 23 45 67 89</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-accent mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>123 Avenue de l'Industrie, 75001 Paris</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-8 bg-surface text-text-primary fade-in">
+                    <h3 class="text-xl font-semibold mb-6">Demande de Renseignements</h3>
+                    <form class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-text-secondary mb-2">Nom *</label>
+                                <input type="text" class="form-input" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-text-secondary mb-2">Prénom *</label>
+                                <input type="text" class="form-input" required />
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Email *</label>
+                            <input type="email" class="form-input" required />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Téléphone</label>
+                            <input type="tel" class="form-input" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Service d'intérêt *</label>
+                            <select class="form-input" required>
+                                <option value>Sélectionnez un service</option>
+                                <option value="terrassement">Terrassement & Excavation</option>
+                                <option value="fondations">Fondations</option>
+                                <option value="hangars">Fabrication de Hangars</option>
+                                <option value="batiments">Bâtiments Industriels</option>
+                                <option value="construction">Construction Générale</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Description du projet</label>
+                            <textarea class="form-input" rows="4" placeholder="Décrivez brièvement votre projet..."></textarea>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button type="submit" class="btn-primary flex-1">
+                                Envoyer la Demande
+                            </button>
+                            <a href="lead_generation_questionnaire.html" class="btn-accent flex-1 text-center">
+                                Questionnaire Détaillé
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services Section -->
+    <section class="py-16 lg:py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-fluid-2xl font-bold text-text-primary mb-4">
+                    Services Complémentaires
+                </h2>
+                <p class="text-fluid-base text-text-secondary max-w-3xl mx-auto">
+                    Explorez nos autres domaines d'expertise pour vos projets d'envergure
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="#terrassement" class="card p-6 hover:shadow-elevated transition-all fade-in">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Terrassement</h3>
+                    <p class="text-text-secondary text-sm">Préparation de terrain et excavation de grande envergure</p>
+                </a>
+
+                <a href="#fondations" class="card p-6 hover:shadow-elevated transition-all fade-in">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Fondations</h3>
+                    <p class="text-text-secondary text-sm">Solutions de fondations robustes pour charges lourdes</p>
+                </a>
+
+                <a href="#hangars" class="card p-6 hover:shadow-elevated transition-all fade-in">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Hangars</h3>
+                    <p class="text-text-secondary text-sm">Fabrication et assemblage de structures métalliques</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-accent" viewBox="0 0 40 40" fill="currentColor">
+                            <rect x="4" y="20" width="32" height="16" rx="2"/>
+                            <rect x="8" y="12" width="24" height="8" rx="1"/>
+                            <rect x="12" y="4" width="16" height="8" rx="1"/>
+                            <circle cx="32" cy="32" r="2"/>
+                            <circle cx="8" cy="32" r="2"/>
+                        </svg>
+                        <span class="ml-2 text-lg font-bold">CivilWorks Pro</span>
+                    </div>
+                    <p class="text-secondary-300 mb-4">
+                        Votre partenaire de confiance pour tous vos projets d'ingénierie civile et de construction industrielle.
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="#terrassement" class="hover:text-accent transition-micro">Terrassement</a></li>
+                        <li><a href="#fondations" class="hover:text-accent transition-micro">Fondations</a></li>
+                        <li><a href="#hangars" class="hover:text-accent transition-micro">Hangars</a></li>
+                        <li><a href="#batiments" class="hover:text-accent transition-micro">Bâtiments Industriels</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li>📧 contact@civilworkspro.fr</li>
+                        <li>📞 +33 1 23 45 67 89</li>
+                        <li>📍 123 Avenue de l'Industrie<br />75001 Paris, France</li>
+                    </ul>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens Utiles</h3>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="lead_generation_questionnaire.html" class="hover:text-accent transition-micro">Devis Gratuit</a></li>
+                        <li><a href="contact_information.html" class="hover:text-accent transition-micro">Contact</a></li>
+                        <li><a href="landing_page.html" class="hover:text-accent transition-micro">Accueil</a></li>
+                        <li><a href="#" class="hover:text-accent transition-micro">Mentions Légales</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-700 mt-8 pt-8 text-center text-secondary-300">
+                <p>&copy; 2025 CivilWorks Pro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl max-h-full">
+            <button id="close-lightbox" class="absolute -top-12 right-0 text-white hover:text-accent transition-micro">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <img id="lightbox-image" src alt class="max-w-full max-h-full object-contain" />
+            <div id="lightbox-info" class="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4">
+                <h3 id="lightbox-title" class="text-lg font-semibold mb-1"></h3>
+                <p id="lightbox-details" class="text-sm opacity-90"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Sidebar navigation active state
+        const serviceNavLinks = document.querySelectorAll('.service-nav-link');
+        const serviceSections = document.querySelectorAll('.service-section');
+
+        function updateActiveNavLink() {
+            let current = '';
+            serviceSections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop <= 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            serviceNavLinks.forEach(link => {
+                link.classList.remove('text-primary', 'bg-primary-50');
+                link.classList.add('text-text-secondary');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-text-secondary');
+                    link.classList.add('text-primary', 'bg-primary-50');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        // Accordion functionality
+        const accordionToggles = document.querySelectorAll('.accordion-toggle');
+        
+        accordionToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const targetId = toggle.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+                const icon = toggle.querySelector('svg');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Gallery lightbox functionality
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxDetails = document.getElementById('lightbox-details');
+        const closeLightbox = document.getElementById('close-lightbox');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imageSrc = item.getAttribute('data-image');
+                const title = item.getAttribute('data-title');
+                const details = item.getAttribute('data-details');
+                
+                lightboxImage.src = imageSrc;
+                lightboxTitle.textContent = title;
+                lightboxDetails.textContent = details;
+                lightbox.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-surface');
+                header.classList.remove('bg-surface/95');
+            } else {
+                header.classList.remove('bg-surface');
+                header.classList.add('bg-surface/95');
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

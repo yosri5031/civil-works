@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionnaire de Génération de Prospects - CivilWorks Pro</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcivilworks4379back.builtwithrocket.new&_v=0.1.2"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-sm border-b border-subtle shadow-card">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Company Logo -->
+                <div class="flex items-center">
+                    <a href="landing_page.html" class="flex items-center">
+                        <svg class="h-10 w-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <rect x="4" y="20" width="32" height="16" rx="2"/>
+                            <rect x="8" y="12" width="24" height="8" rx="1"/>
+                            <rect x="12" y="4" width="16" height="8" rx="1"/>
+                            <circle cx="32" cy="32" r="2"/>
+                            <circle cx="8" cy="32" r="2"/>
+                        </svg>
+                        <span class="ml-3 text-xl font-bold text-primary">CivilWorks Pro</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="landing_page.html" class="text-text-secondary hover:text-primary transition-micro">Accueil</a>
+                    <a href="service_portfolio_detail.html" class="text-text-secondary hover:text-primary transition-micro">Services</a>
+                    <a href="contact_information.html" class="text-text-secondary hover:text-primary transition-micro">Contact</a>
+                    <a href="landing_page.html" class="btn-primary">Retour à l'accueil</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-text-secondary hover:text-primary hover:bg-secondary-50 transition-micro">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="landing_page.html" class="text-text-secondary hover:text-primary transition-micro py-2">Accueil</a>
+                    <a href="service_portfolio_detail.html" class="text-text-secondary hover:text-primary transition-micro py-2">Services</a>
+                    <a href="contact_information.html" class="text-text-secondary hover:text-primary transition-micro py-2">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="fixed top-16 left-0 right-0 z-40 bg-surface border-b border-subtle">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex items-center justify-between mb-2">
+                <h1 class="text-lg font-semibold text-text-primary">Questionnaire de Devis</h1>
+                <span id="progress-text" class="text-sm text-text-secondary">Étape 1 sur 6</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill" style="width: 16.67%"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-16 min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <!-- Desktop Sidebar -->
+                <div class="hidden lg:block lg:col-span-4">
+                    <div class="sticky top-32">
+                        <!-- Progress Overview -->
+                        <div class="card p-6 mb-6">
+                            <h3 class="text-lg font-semibold text-text-primary mb-4">Progression</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-medium mr-3">1</div>
+                                    <span class="text-sm text-text-primary">Type de projet</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-secondary-200 text-text-secondary flex items-center justify-center text-sm font-medium mr-3">2</div>
+                                    <span class="text-sm text-text-secondary">Délais et budget</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-secondary-200 text-text-secondary flex items-center justify-center text-sm font-medium mr-3">3</div>
+                                    <span class="text-sm text-text-secondary">Localisation</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-secondary-200 text-text-secondary flex items-center justify-center text-sm font-medium mr-3">4</div>
+                                    <span class="text-sm text-text-secondary">Spécifications</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-secondary-200 text-text-secondary flex items-center justify-center text-sm font-medium mr-3">5</div>
+                                    <span class="text-sm text-text-secondary">Services requis</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-secondary-200 text-text-secondary flex items-center justify-center text-sm font-medium mr-3">6</div>
+                                    <span class="text-sm text-text-secondary">Informations contact</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Highlights -->
+                        <div class="card p-6">
+                            <h3 class="text-lg font-semibold text-text-primary mb-4">Nos Services</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-text-secondary">Terrassement & Excavation</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-text-secondary">Fondations Spécialisées</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-text-secondary">Fabrication de Hangars</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-text-secondary">Bâtiments Industriels</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Content -->
+                <div class="lg:col-span-8">
+                    <form id="lead-form" class="space-y-8">
+                        <!-- Step 1: Project Type -->
+                        <div id="step-1" class="form-step active">
+                            <div class="card p-6 lg:p-8">
+                                <div class="mb-6">
+                                    <h2 class="text-fluid-xl font-bold text-text-primary mb-2">Quel type de projet envisagez-vous ?</h2>
+                                    <p class="text-text-secondary">Sélectionnez le type de projet qui correspond le mieux à vos besoins.</p>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <label class="project-type-option">
+                                        <input type="radio" name="project_type" value="hangar" class="sr-only" />
+                                        <div class="card p-6 cursor-pointer border-2 border-transparent hover:border-primary transition-micro">
+                                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                                                </svg>
+                                            </div>
+                                            <h3 class="font-semibold text-text-primary mb-2">Hangar Industriel</h3>
+                                            <p class="text-sm text-text-secondary">Construction de hangars métalliques pour stockage ou production</p>
+                                        </div>
+                                    </label>
+
+                                    <label class="project-type-option">
+                                        <input type="radio" name="project_type" value="foundation" class="sr-only" />
+                                        <div class="card p-6 cursor-pointer border-2 border-transparent hover:border-primary transition-micro">
+                                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                                                </svg>
+                                            </div>
+                                            <h3 class="font-semibold text-text-primary mb-2">Fondations</h3>
+                                            <p class="text-sm text-text-secondary">Fondations spécialisées pour bâtiments industriels</p>
+                                        </div>
+                                    </label>
+
+                                    <label class="project-type-option">
+                                        <input type="radio" name="project_type" value="earthworks" class="sr-only" />
+                                        <div class="card p-6 cursor-pointer border-2 border-transparent hover:border-primary transition-micro">
+                                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1z"/>
+                                                </svg>
+                                            </div>
+                                            <h3 class="font-semibold text-text-primary mb-2">Terrassement</h3>
+                                            <p class="text-sm text-text-secondary">Préparation de terrain et excavation</p>
+                                        </div>
+                                    </label>
+
+                                    <label class="project-type-option">
+                                        <input type="radio" name="project_type" value="industrial_building" class="sr-only" />
+                                        <div class="card p-6 cursor-pointer border-2 border-transparent hover:border-primary transition-micro">
+                                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                                                </svg>
+                                            </div>
+                                            <h3 class="font-semibold text-text-primary mb-2">Bâtiment Industriel</h3>
+                                            <p class="text-sm text-text-secondary">Construction complète d'installations industrielles</p>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div id="project-type-error" class="hidden mt-4 p-3 bg-error-50 border border-error-200 rounded-md">
+                                    <p class="text-sm text-error-600">Veuillez sélectionner un type de projet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Timeline and Budget -->
+                        <div id="step-2" class="form-step hidden">
+                            <div class="card p-6 lg:p-8">
+                                <div class="mb-6">
+                                    <h2 class="text-fluid-xl font-bold text-text-primary mb-2">Délais et Budget</h2>
+                                    <p class="text-text-secondary">Indiquez vos contraintes temporelles et budgétaires.</p>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <!-- Timeline -->
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Délai souhaité</label>
+                                        <select name="timeline" class="form-input">
+                                            <option value>Sélectionnez un délai</option>
+                                            <option value="urgent">Urgent (moins de 3 mois)</option>
+                                            <option value="normal">Normal (3-6 mois)</option>
+                                            <option value="flexible">Flexible (6-12 mois)</option>
+                                            <option value="planning">En planification (plus de 12 mois)</option>
+                                        </select>
+                                        <div id="timeline-error" class="hidden mt-2 text-sm text-error-600">Veuillez sélectionner un délai.</div>
+                                    </div>
+
+                                    <!-- Budget -->
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Budget estimé (€)</label>
+                                        <select name="budget" class="form-input">
+                                            <option value>Sélectionnez une fourchette</option>
+                                            <option value="50k-100k">50 000 € - 100 000 €</option>
+                                            <option value="100k-250k">100 000 € - 250 000 €</option>
+                                            <option value="250k-500k">250 000 € - 500 000 €</option>
+                                            <option value="500k-1m">500 000 € - 1 000 000 €</option>
+                                            <option value="1m+">Plus de 1 000 000 €</option>
+                                            <option value="to-define">À définir</option>
+                                        </select>
+                                        <div id="budget-error" class="hidden mt-2 text-sm text-error-600">Veuillez sélectionner un budget.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Project Size -->
+                                <div class="mt-6">
+                                    <label class="block text-sm font-medium text-text-primary mb-2">Taille approximative du projet</label>
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                        <label class="flex items-center">
+                                            <input type="radio" name="project_size" value="small" class="mr-2" />
+                                            <span class="text-sm">Petit (< 1000 m²)</span>
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="radio" name="project_size" value="medium" class="mr-2" />
+                                            <span class="text-sm">Moyen (1000-5000 m²)</span>
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="radio" name="project_size" value="large" class="mr-2" />
+                                            <span class="text-sm">Grand (> 5000 m²)</span>
+                                        </label>
+                                    </div>
+                                    <div id="project-size-error" class="hidden mt-2 text-sm text-error-600">Veuillez sélectionner une taille de projet.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Location -->
+                        <div id="step-3" class="form-step hidden">
+                            <div class="card p-6 lg:p-8">
+                                <div class="mb-6">
+                                    <h2 class="text-fluid-xl font-bold text-text-primary mb-2">Localisation du Projet</h2>
+                                    <p class="text-text-secondary">Où se situe votre projet ? Ces informations nous aident à mieux vous servir.</p>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <!-- Region -->
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Région</label>
+                                        <select name="region" class="form-input">
+                                            <option value>Sélectionnez une région</option>
+                                            <option value="ile-de-france">Île-de-France</option>
+                                            <option value="auvergne-rhone-alpes">Auvergne-Rhône-Alpes</option>
+                                            <option value="nouvelle-aquitaine">Nouvelle-Aquitaine</option>
+                                            <option value="occitanie">Occitanie</option>
+                                            <option value="hauts-de-france">Hauts-de-France</option>
+                                            <option value="grand-est">Grand Est</option>
+                                            <option value="provence-alpes-cote-azur">Provence-Alpes-Côte d'Azur</option>
+                                            <option value="pays-de-la-loire">Pays de la Loire</option>
+                                            <option value="bretagne">Bretagne</option>
+                                            <option value="normandie">Normandie</option>
+                                            <option value="bourgogne-franche-comte">Bourgogne-Franche-Comté</option>
+                                            <option value="centre-val-de-loire">Centre-Val de Loire</option>
+                                            <option value="corse">Corse</option>
+                                        </select>
+                                        <div id="region-error" class="hidden mt-2 text-sm text-error-600">Veuillez sélectionner une région.</div>
+                                    </div>
+
+                                    <!-- City -->
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Ville</label>
+                                        <input type="text" name="city" class="form-input" placeholder="Entrez le nom de la ville" />
+                                        <div id="city-error" class="hidden mt-2 text-sm text-error-600">Veuillez entrer le nom de la ville.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Postal Code -->
+                                <div class="mt-6">
+                                    <label class="block text-sm font-medium text-text-primary mb-2">Code postal</label>
+                                    <input type="text" name="postal_code" class="form-input w-full md:w-1/3" placeholder="75001" pattern="[0-9]{5}" />
+                                    <div id="postal-code-error" class="hidden mt-2 text-sm text-error-600">Veuillez entrer un code postal valide (5 chiffres).</div>
+                                </div>
+
+                                <!-- Site Access -->
+                                <div class="mt-6">
+                                    <label class="block text-sm font-medium text-text-primary mb-2">Accessibilité du site</label>
+                                    <div class="space-y-2">
+                                        <label class="flex items-center">
+                                            <input type="checkbox" name="site_access" value="truck_access" class="mr-2" />
+                                            <span class="text-sm">Accès poids lourds</span>
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" name="site_access" value="crane_access" class="mr-2" />
+                                            <span class="text-sm">Accès grue</span>
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" name="site_access" value="utilities" class="mr-2" />
+                                            <span class="text-sm">Réseaux disponibles (eau, électricité)</span>
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" name="site_access" value="permits" class="mr-2" />
+                                            <span class="text-sm">Permis de construire obtenu</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Specifications -->
+                        <div id="step-4" class="form-step hidden">
+                            <div class="card p-6 lg:p-8">
+                                <div class="mb-6">
+                                    <h2 class="text-fluid-xl font-bold text-text-primary mb-2">Spécifications Techniques</h2>
+                                    <p class="text-text-secondary">Décrivez les caractéristiques techniques souhaitées pour votre projet.</p>
+                                </div>
+
+                                <!-- Technical Requirements -->
+                                <div class="space-y-6">
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Exigences particulières</label>
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="requirements" value="seismic" class="mr-2" />
+                                                <span class="text-sm">Résistance sismique</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="requirements" value="fire_resistant" class="mr-2" />
+                                                <span class="text-sm">Résistance au feu</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="requirements" value="insulation" class="mr-2" />
+                                                <span class="text-sm">Isolation thermique</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="requirements" value="ventilation" class="mr-2" />
+                                                <span class="text-sm">Système de ventilation</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="requirements" value="overhead_crane" class="mr-2" />
+                                                <span class="text-sm">Pont roulant</span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="checkbox" name="requirements" value="loading_dock" class="mr-2" />
+                                                <span class="text-sm">Quai de chargement</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Height Requirements -->
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Hauteur sous plafond souhaitée</label>
+                                        <select name="height_requirement" class="form-input w-full md:w-1/2">
+                                            <option value>Sélectionnez une hauteur</option>
+                                            <option value="4-6m">4-6 mètres</option>
+                                            <option value="6-8m">6-8 mètres</option>
+                                            <option value="8-12m">8-12 mètres</option>
+                                            <option value="12m+">Plus de 12 mètres</option>
+                                            <option value="custom">Hauteur personnalisée</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Additional Details -->
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Détails supplémentaires</label>
+                                        <textarea name="additional_details" rows="4" class="form-input" placeholder="Décrivez toute exigence spécifique, contrainte technique ou information importante pour votre projet..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5: Services Required -->
+                        <div id="step-5" class="form-step hidden">
+                            <div class="card p-6 lg:p-8">
+                                <div class="mb-6">
+                                    <h2 class="text-fluid-xl font-bold text-text-primary mb-2">Services Requis</h2>
+                                    <p class="text-text-secondary">Sélectionnez les services dont vous avez besoin pour votre projet.</p>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <label class="service-option">
+                                        <input type="checkbox" name="services" value="site_study" class="sr-only" />
+                                        <div class="card p-4 cursor-pointer border-2 border-transparent hover:border-primary transition-micro">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <h3 class="font-medium text-text-primary">Étude de site</h3>
+                                                    <p class="text-sm text-text-secondary">Analyse géotechnique et topographique</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <label class="service-option">
+                                        <input type="checkbox" name="services" value="design" class="sr-only" />
+                                        <div class="card p-4 cursor-pointer border-2 border-transparent hover:border-primary transition-micro">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"/>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <h3 class="font-medium text-text-primary">Conception & Plans</h3>
+                                                    <p class="text-sm text-text-secondary">Études techniques et plans d'exécution</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <label class="service-option">
+                                        <input type="checkbox" name="services" value="permits" class="sr-only" />
+                                        <div class="card p-4 cursor-pointer border-2 border-transparent hover:border-primary transition-micro">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2h.01a1 1 0 100-2H10zm-4 1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1zm1-4a1 1 0 100 2h.01a1 1 0 100-2H7zm2 0a1 1 0 100 2h.01a1 1 0 100-2H9zm2 0a1 1 0 100 2h.01a1 1 0 100-2H11z" clip-rule="evenodd"/>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <h3 class="font-medium text-text-primary">Démarches administratives</h3>
+                                                    <p class="text-sm text-text-secondary">Permis de construire et autorisations</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <label class="service-option">
+                                        <input type="checkbox" name="services" value="construction" class="sr-only" />
+                                        <div class="card p-4 cursor-pointer border-2 border-transparent hover:border-primary transition-micro">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <h3 class="font-medium text-text-primary">Construction</h3>
+                                                    <p class="text-sm text-text-secondary">Réalisation complète du projet</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <label class="service-option">
+                                        <input type="checkbox" name="services" value="project_management" class="sr-only" />
+                                        <div class="card p-4 cursor-pointer border-2 border-transparent hover:border-primary transition-micro">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                                                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <h3 class="font-medium text-text-primary">Gestion de projet</h3>
+                                                    <p class="text-sm text-text-secondary">Coordination et suivi de chantier</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <label class="service-option">
+                                        <input type="checkbox" name="services" value="maintenance" class="sr-only" />
+                                        <div class="card p-4 cursor-pointer border-2 border-transparent hover:border-primary transition-micro">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <h3 class="font-medium text-text-primary">Maintenance</h3>
+                                                    <p class="text-sm text-text-secondary">Service après-vente et entretien</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div id="services-error" class="hidden mt-4 p-3 bg-error-50 border border-error-200 rounded-md">
+                                    <p class="text-sm text-error-600">Veuillez sélectionner au moins un service.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6: Contact Information -->
+                        <div id="step-6" class="form-step hidden">
+                            <div class="card p-6 lg:p-8">
+                                <div class="mb-6">
+                                    <h2 class="text-fluid-xl font-bold text-text-primary mb-2">Informations de Contact</h2>
+                                    <p class="text-text-secondary">Dernière étape ! Laissez-nous vos coordonnées pour recevoir votre devis personnalisé.</p>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <!-- First Name -->
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Prénom *</label>
+                                        <input type="text" name="first_name" class="form-input" placeholder="Votre prénom" required />
+                                        <div id="first-name-error" class="hidden mt-2 text-sm text-error-600">Veuillez entrer votre prénom.</div>
+                                    </div>
+
+                                    <!-- Last Name -->
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Nom *</label>
+                                        <input type="text" name="last_name" class="form-input" placeholder="Votre nom" required />
+                                        <div id="last-name-error" class="hidden mt-2 text-sm text-error-600">Veuillez entrer votre nom.</div>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Email *</label>
+                                        <input type="email" name="email" class="form-input" placeholder="votre.email@exemple.fr" required />
+                                        <div id="email-error" class="hidden mt-2 text-sm text-error-600">Veuillez entrer une adresse email valide.</div>
+                                    </div>
+
+                                    <!-- Phone -->
+                                    <div>
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Téléphone *</label>
+                                        <input type="tel" name="phone" class="form-input" placeholder="+33 1 23 45 67 89" required />
+                                        <div id="phone-error" class="hidden mt-2 text-sm text-error-600">Veuillez entrer un numéro de téléphone valide.</div>
+                                    </div>
+
+                                    <!-- Company -->
+                                    <div class="md:col-span-2">
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Entreprise</label>
+                                        <input type="text" name="company" class="form-input" placeholder="Nom de votre entreprise" />
+                                    </div>
+
+                                    <!-- Position -->
+                                    <div class="md:col-span-2">
+                                        <label class="block text-sm font-medium text-text-primary mb-2">Fonction</label>
+                                        <input type="text" name="position" class="form-input" placeholder="Votre fonction dans l'entreprise" />
+                                    </div>
+                                </div>
+
+                                <!-- GDPR Consent -->
+                                <div class="mt-6">
+                                    <label class="flex items-start">
+                                        <input type="checkbox" name="gdpr_consent" class="mt-1 mr-3" required />
+                                        <span class="text-sm text-text-secondary">
+                                            J'accepte que mes données personnelles soient utilisées pour me recontacter concernant ma demande de devis. 
+                                            Conformément au RGPD, vous pouvez exercer vos droits d'accès, de rectification et de suppression en nous contactant. *
+                                        </span>
+                                    </label>
+                                    <div id="gdpr-error" class="hidden mt-2 text-sm text-error-600">Vous devez accepter le traitement de vos données personnelles.</div>
+                                </div>
+
+                                <!-- Marketing Consent -->
+                                <div class="mt-4">
+                                    <label class="flex items-start">
+                                        <input type="checkbox" name="marketing_consent" class="mt-1 mr-3" />
+                                        <span class="text-sm text-text-secondary">
+                                            J'accepte de recevoir des informations commerciales de CivilWorks Pro par email.
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="flex justify-between items-center pt-6">
+                            <button type="button" id="prev-btn" class="btn-secondary hidden">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                                Précédent
+                            </button>
+                            
+                            <div class="flex-1"></div>
+                            
+                            <button type="button" id="next-btn" class="btn-primary">
+                                Suivant
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            
+                            <button type="submit" id="submit-btn" class="btn-accent hidden">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                                </svg>
+                                Soumettre ma demande
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-accent" viewBox="0 0 40 40" fill="currentColor">
+                            <rect x="4" y="20" width="32" height="16" rx="2"/>
+                            <rect x="8" y="12" width="24" height="8" rx="1"/>
+                            <rect x="12" y="4" width="16" height="8" rx="1"/>
+                            <circle cx="32" cy="32" r="2"/>
+                            <circle cx="8" cy="32" r="2"/>
+                        </svg>
+                        <span class="ml-2 text-lg font-bold">CivilWorks Pro</span>
+                    </div>
+                    <p class="text-secondary-300 mb-4">
+                        Votre partenaire de confiance pour tous vos projets d'ingénierie civile et de construction industrielle.
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="service_portfolio_detail.html" class="hover:text-accent transition-micro">Terrassement</a></li>
+                        <li><a href="service_portfolio_detail.html" class="hover:text-accent transition-micro">Fondations</a></li>
+                        <li><a href="service_portfolio_detail.html" class="hover:text-accent transition-micro">Hangars</a></li>
+                        <li><a href="service_portfolio_detail.html" class="hover:text-accent transition-micro">Bâtiments Industriels</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li>📧 contact@civilworkspro.fr</li>
+                        <li>📞 +33 1 23 45 67 89</li>
+                        <li>📍 123 Avenue de l'Industrie<br />75001 Paris, France</li>
+                    </ul>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens Utiles</h3>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="lead_generation_questionnaire.html" class="hover:text-accent transition-micro">Devis Gratuit</a></li>
+                        <li><a href="contact_information.html" class="hover:text-accent transition-micro">Contact</a></li>
+                        <li><a href="service_portfolio_detail.html" class="hover:text-accent transition-micro">Portfolio</a></li>
+                        <li><a href="#" class="hover:text-accent transition-micro">Mentions Légales</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-700 mt-8 pt-8 text-center text-secondary-300">
+                <p>&copy; 2025 CivilWorks Pro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Form state management
+        let currentStep = 1;
+        const totalSteps = 6;
+        const formData = {};
+
+        // DOM elements
+        const form = document.getElementById('lead-form');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const submitBtn = document.getElementById('submit-btn');
+        const progressFill = document.getElementById('progress-fill');
+        const progressText = document.getElementById('progress-text');
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Initialize form
+        document.addEventListener('DOMContentLoaded', () => {
+            loadFormData();
+            updateUI();
+            setupEventListeners();
+        });
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Navigation buttons
+            nextBtn.addEventListener('click', nextStep);
+            prevBtn.addEventListener('click', prevStep);
+            submitBtn.addEventListener('click', submitForm);
+
+            // Project type selection
+            document.querySelectorAll('input[name="project_type"]').forEach(input => {
+                input.addEventListener('change', (e) => {
+                    document.querySelectorAll('.project-type-option .card').forEach(card => {
+                        card.classList.remove('border-primary', 'bg-primary-50');
+                        card.classList.add('border-transparent');
+                    });
+                    if (e.target.checked) {
+                        const card = e.target.closest('.project-type-option').querySelector('.card');
+                        card.classList.add('border-primary', 'bg-primary-50');
+                        card.classList.remove('border-transparent');
+                    }
+                });
+            });
+
+            // Service selection
+            document.querySelectorAll('input[name="services"]').forEach(input => {
+                input.addEventListener('change', (e) => {
+                    const card = e.target.closest('.service-option').querySelector('.card');
+                    if (e.target.checked) {
+                        card.classList.add('border-primary', 'bg-primary-50');
+                        card.classList.remove('border-transparent');
+                    } else {
+                        card.classList.remove('border-primary', 'bg-primary-50');
+                        card.classList.add('border-transparent');
+                    }
+                });
+            });
+
+            // Auto-save form data
+            form.addEventListener('input', saveFormData);
+            form.addEventListener('change', saveFormData);
+        }
+
+        // Update UI based on current step
+        function updateUI() {
+            // Hide all steps
+            document.querySelectorAll('.form-step').forEach(step => {
+                step.classList.add('hidden');
+                step.classList.remove('active');
+            });
+
+            // Show current step
+            const currentStepElement = document.getElementById(`step-${currentStep}`);
+            if (currentStepElement) {
+                currentStepElement.classList.remove('hidden');
+                currentStepElement.classList.add('active');
+            }
+
+            // Update progress
+            const progress = (currentStep / totalSteps) * 100;
+            progressFill.style.width = `${progress}%`;
+            progressText.textContent = `Étape ${currentStep} sur ${totalSteps}`;
+
+            // Update navigation buttons
+            prevBtn.classList.toggle('hidden', currentStep === 1);
+            nextBtn.classList.toggle('hidden', currentStep === totalSteps);
+            submitBtn.classList.toggle('hidden', currentStep !== totalSteps);
+
+            // Update sidebar progress (desktop)
+            document.querySelectorAll('.lg\\:block .card:first-child .space-y-3 > div').forEach((item, index) => {
+                const circle = item.querySelector('div');
+                const text = item.querySelector('span');
+                
+                if (index + 1 < currentStep) {
+                    // Completed step
+                    circle.className = 'w-8 h-8 rounded-full bg-success text-white flex items-center justify-center text-sm font-medium mr-3';
+                    text.className = 'text-sm text-text-primary';
+                } else if (index + 1 === currentStep) {
+                    // Current step
+                    circle.className = 'w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-medium mr-3';
+                    text.className = 'text-sm text-text-primary';
+                } else {
+                    // Future step
+                    circle.className = 'w-8 h-8 rounded-full bg-secondary-200 text-text-secondary flex items-center justify-center text-sm font-medium mr-3';
+                    text.className = 'text-sm text-text-secondary';
+                }
+            });
+        }
+
+        // Validate current step
+        function validateStep(step) {
+            clearErrors();
+            let isValid = true;
+
+            switch (step) {
+                case 1:
+                    const projectType = document.querySelector('input[name="project_type"]:checked');
+                    if (!projectType) {
+                        showError('project-type-error');
+                        isValid = false;
+                    }
+                    break;
+
+                case 2:
+                    const timeline = document.querySelector('select[name="timeline"]').value;
+                    const budget = document.querySelector('select[name="budget"]').value;
+                    const projectSize = document.querySelector('input[name="project_size"]:checked');
+
+                    if (!timeline) {
+                        showError('timeline-error');
+                        isValid = false;
+                    }
+                    if (!budget) {
+                        showError('budget-error');
+                        isValid = false;
+                    }
+                    if (!projectSize) {
+                        showError('project-size-error');
+                        isValid = false;
+                    }
+                    break;
+
+                case 3:
+                    const region = document.querySelector('select[name="region"]').value;
+                    const city = document.querySelector('input[name="city"]').value.trim();
+                    const postalCode = document.querySelector('input[name="postal_code"]').value.trim();
+
+                    if (!region) {
+                        showError('region-error');
+                        isValid = false;
+                    }
+                    if (!city) {
+                        showError('city-error');
+                        isValid = false;
+                    }
+                    if (!postalCode || !/^\d{5}$/.test(postalCode)) {
+                        showError('postal-code-error');
+                        isValid = false;
+                    }
+                    break;
+
+                case 4:
+                    // Optional step - no required validation
+                    break;
+
+                case 5:
+                    const services = document.querySelectorAll('input[name="services"]:checked');
+                    if (services.length === 0) {
+                        showError('services-error');
+                        isValid = false;
+                    }
+                    break;
+
+                case 6:
+                    const firstName = document.querySelector('input[name="first_name"]').value.trim();
+                    const lastName = document.querySelector('input[name="last_name"]').value.trim();
+                    const email = document.querySelector('input[name="email"]').value.trim();
+                    const phone = document.querySelector('input[name="phone"]').value.trim();
+                    const gdprConsent = document.querySelector('input[name="gdpr_consent"]').checked;
+
+                    if (!firstName) {
+                        showError('first-name-error');
+                        isValid = false;
+                    }
+                    if (!lastName) {
+                        showError('last-name-error');
+                        isValid = false;
+                    }
+                    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                        showError('email-error');
+                        isValid = false;
+                    }
+                    if (!phone || !/^[\+]?[0-9\s\-\(\)]{10,}$/.test(phone)) {
+                        showError('phone-error');
+                        isValid = false;
+                    }
+                    if (!gdprConsent) {
+                        showError('gdpr-error');
+                        isValid = false;
+                    }
+                    break;
+            }
+
+            return isValid;
+        }
+
+        // Show error message
+        function showError(errorId) {
+            const errorElement = document.getElementById(errorId);
+            if (errorElement) {
+                errorElement.classList.remove('hidden');
+            }
+        }
+
+        // Clear all error messages
+        function clearErrors() {
+            document.querySelectorAll('[id$="-error"]').forEach(error => {
+                error.classList.add('hidden');
+            });
+        }
+
+        // Next step
+        function nextStep() {
+            if (validateStep(currentStep)) {
+                saveFormData();
+                currentStep++;
+                updateUI();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // Previous step
+        function prevStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                updateUI();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // Save form data to localStorage
+        function saveFormData() {
+            const formData = new FormData(form);
+            const data = {};
+            
+            for (let [key, value] of formData.entries()) {
+                if (data[key]) {
+                    if (Array.isArray(data[key])) {
+                        data[key].push(value);
+                    } else {
+                        data[key] = [data[key], value];
+                    }
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            localStorage.setItem('leadFormData', JSON.stringify(data));
+        }
+
+        // Load form data from localStorage
+        function loadFormData() {
+            const savedData = localStorage.getItem('leadFormData');
+            if (savedData) {
+                const data = JSON.parse(savedData);
+                
+                Object.keys(data).forEach(key => {
+                    const elements = document.querySelectorAll(`[name="${key}"]`);
+                    elements.forEach(element => {
+                        if (element.type === 'checkbox' || element.type === 'radio') {
+                            if (Array.isArray(data[key])) {
+                                element.checked = data[key].includes(element.value);
+                            } else {
+                                element.checked = element.value === data[key];
+                            }
+                        } else {
+                            element.value = data[key];
+                        }
+                    });
+                });
+            }
+        }
+
+        // Submit form
+        function submitForm(e) {
+            e.preventDefault();
+            
+            if (validateStep(currentStep)) {
+                saveFormData();
+                
+                // Simulate form submission
+                const submitButton = e.target;
+                const originalText = submitButton.innerHTML;
+                
+                submitButton.disabled = true;
+                submitButton.innerHTML = `
+                    <svg class="w-4 h-4 mr-2 animate-spin" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="m4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Envoi en cours...
+                `;
+
+                // Simulate API call
+                setTimeout(() => {
+                    // Clear saved data
+                    localStorage.removeItem('leadFormData');
+                    
+                    // Redirect to thank you page
+                    window.location.href = 'thank_you_confirmation.html';
+                }, 2000);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') {
+                e.preventDefault();
+                if (currentStep < totalSteps) {
+                    nextStep();
+                } else {
+                    submitForm(e);
+                }
+            }
+        });
+
+        // Auto-resize textareas
+        document.querySelectorAll('textarea').forEach(textarea => {
+            textarea.addEventListener('input', function() {
+                this.style.height = 'auto';
+                this.style.height = this.scrollHeight + 'px';
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

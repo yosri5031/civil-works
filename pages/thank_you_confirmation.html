@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merci - CivilWorks Pro</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcivilworks4379back.builtwithrocket.new&_v=0.1.2"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-sm border-b border-subtle shadow-card">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Company Logo -->
+                <div class="flex items-center">
+                    <svg class="h-10 w-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <rect x="4" y="20" width="32" height="16" rx="2"/>
+                        <rect x="8" y="12" width="24" height="8" rx="1"/>
+                        <rect x="12" y="4" width="16" height="8" rx="1"/>
+                        <circle cx="32" cy="32" r="2"/>
+                        <circle cx="8" cy="32" r="2"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-bold text-primary">CivilWorks Pro</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="landing_page.html" class="text-text-secondary hover:text-primary transition-micro">Accueil</a>
+                    <a href="service_portfolio_detail.html" class="text-text-secondary hover:text-primary transition-micro">Services</a>
+                    <a href="service_portfolio_detail.html" class="text-text-secondary hover:text-primary transition-micro">Projets</a>
+                    <a href="contact_information.html" class="text-text-secondary hover:text-primary transition-micro">Contact</a>
+                    <a href="lead_generation_questionnaire.html" class="btn-primary">Devis Gratuit</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-text-secondary hover:text-primary hover:bg-secondary-50 transition-micro">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="landing_page.html" class="text-text-secondary hover:text-primary transition-micro py-2">Accueil</a>
+                    <a href="service_portfolio_detail.html" class="text-text-secondary hover:text-primary transition-micro py-2">Services</a>
+                    <a href="service_portfolio_detail.html" class="text-text-secondary hover:text-primary transition-micro py-2">Projets</a>
+                    <a href="contact_information.html" class="text-text-secondary hover:text-primary transition-micro py-2">Contact</a>
+                    <a href="lead_generation_questionnaire.html" class="btn-primary mt-2 text-center">Devis Gratuit</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="min-h-screen pt-20 pb-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Success Confirmation Card -->
+            <section class="text-center mb-16">
+                <div class="card p-8 lg:p-12 max-w-3xl mx-auto fade-in">
+                    <!-- Success Icon -->
+                    <div class="w-20 h-20 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-success animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+
+                    <!-- Thank You Message -->
+                    <h1 class="text-fluid-3xl font-bold text-text-primary mb-4">
+                        Merci pour votre demande !
+                    </h1>
+                    <p class="text-fluid-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                        <span id="client-name" class="font-semibold text-primary">Monsieur/Madame</span>, 
+                        votre demande de devis a été reçue avec succès. Notre équipe d'experts va l'examiner et vous contacter très prochainement.
+                    </p>
+
+                    <!-- Confirmation Details -->
+                    <div class="bg-primary-50 rounded-lg p-6 mb-8">
+                        <div class="flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span class="font-semibold text-primary">Demande confirmée</span>
+                        </div>
+                        <p class="text-text-secondary text-sm">
+                            Numéro de référence : <span class="font-mono font-semibold" id="reference-number">CWP-2025-001</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Next Steps & Information -->
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                <!-- Next Steps -->
+                <div class="card p-6 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold text-text-primary">Prochaines Étapes</h2>
+                    </div>
+                    <ul class="space-y-4 text-text-secondary">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-semibold mr-3 mt-0.5">1</span>
+                            <span>Analyse de votre demande par notre équipe technique (sous 2h)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-semibold mr-3 mt-0.5">2</span>
+                            <span>Contact téléphonique pour préciser vos besoins (24-48h)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-semibold mr-3 mt-0.5">3</span>
+                            <span>Envoi du devis détaillé personnalisé (3-5 jours ouvrés)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Submission Summary -->
+                <div class="card p-6 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold text-text-primary">Résumé de votre demande</h2>
+                    </div>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Type de projet :</span>
+                            <span class="font-medium text-text-primary" id="project-type">Construction de hangar</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Surface estimée :</span>
+                            <span class="font-medium text-text-primary" id="project-size">1000-2000 m²</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Délai souhaité :</span>
+                            <span class="font-medium text-text-primary" id="project-timeline">6-12 mois</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Contact préféré :</span>
+                            <span class="font-medium text-text-primary" id="contact-method">Téléphone</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Date de soumission :</span>
+                            <span class="font-medium text-text-primary" id="submission-date">15/01/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Information -->
+            <section class="card p-6 lg:p-8 mb-16 bg-primary text-white fade-in">
+                <div class="text-center mb-6">
+                    <h2 class="text-fluid-xl font-semibold mb-2">Besoin d'une réponse urgente ?</h2>
+                    <p class="opacity-90">Notre équipe est disponible pour répondre à vos questions</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold mb-1">Téléphone</h3>
+                        <p class="text-sm opacity-90">+33 1 23 45 67 89</p>
+                        <p class="text-xs opacity-75">Lun-Ven 8h-18h</p>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold mb-1">Email</h3>
+                        <p class="text-sm opacity-90">contact@civilworkspro.fr</p>
+                        <p class="text-xs opacity-75">Réponse sous 2h</p>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold mb-1">Bureau</h3>
+                        <p class="text-sm opacity-90">123 Avenue de l'Industrie</p>
+                        <p class="text-xs opacity-75">75001 Paris, France</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Buttons -->
+            <section class="text-center fade-in">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                    <a href="landing_page.html" class="btn-primary flex-1 text-center">
+                        <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                        Retour à l'accueil
+                    </a>
+                    <a href="service_portfolio_detail.html" class="btn-accent flex-1 text-center">
+                        <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        Voir nos projets
+                    </a>
+                </div>
+                
+                <!-- Social Media Links -->
+                <div class="mt-8 pt-8 border-t border-subtle">
+                    <p class="text-text-secondary mb-4">Suivez-nous sur les réseaux sociaux</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="w-10 h-10 bg-secondary-100 rounded-lg flex items-center justify-center text-secondary hover:bg-primary hover:text-white transition-micro">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-secondary-100 rounded-lg flex items-center justify-center text-secondary hover:bg-primary hover:text-white transition-micro">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-secondary-100 rounded-lg flex items-center justify-center text-secondary hover:bg-primary hover:text-white transition-micro">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-accent" viewBox="0 0 40 40" fill="currentColor">
+                            <rect x="4" y="20" width="32" height="16" rx="2"/>
+                            <rect x="8" y="12" width="24" height="8" rx="1"/>
+                            <rect x="12" y="4" width="16" height="8" rx="1"/>
+                            <circle cx="32" cy="32" r="2"/>
+                            <circle cx="8" cy="32" r="2"/>
+                        </svg>
+                        <span class="ml-2 text-lg font-bold">CivilWorks Pro</span>
+                    </div>
+                    <p class="text-secondary-300 mb-4">
+                        Votre partenaire de confiance pour tous vos projets d'ingénierie civile et de construction industrielle.
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="service_portfolio_detail.html" class="hover:text-accent transition-micro">Terrassement</a></li>
+                        <li><a href="service_portfolio_detail.html" class="hover:text-accent transition-micro">Fondations</a></li>
+                        <li><a href="service_portfolio_detail.html" class="hover:text-accent transition-micro">Hangars</a></li>
+                        <li><a href="service_portfolio_detail.html" class="hover:text-accent transition-micro">Bâtiments Industriels</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li>📧 contact@civilworkspro.fr</li>
+                        <li>📞 +33 1 23 45 67 89</li>
+                        <li>📍 123 Avenue de l'Industrie<br />75001 Paris, France</li>
+                    </ul>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens Utiles</h3>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="lead_generation_questionnaire.html" class="hover:text-accent transition-micro">Devis Gratuit</a></li>
+                        <li><a href="contact_information.html" class="hover:text-accent transition-micro">Contact</a></li>
+                        <li><a href="service_portfolio_detail.html" class="hover:text-accent transition-micro">Portfolio</a></li>
+                        <li><a href="#" class="hover:text-accent transition-micro">Mentions Légales</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-700 mt-8 pt-8 text-center text-secondary-300">
+                <p>&copy; 2025 CivilWorks Pro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Generate reference number
+        function generateReferenceNumber() {
+            const date = new Date();
+            const year = date.getFullYear();
+            const randomNum = Math.floor(Math.random() * 1000).toString().padStart(3, '0');
+            return `CWP-${year}-${randomNum}`;
+        }
+
+        // Get current date in French format
+        function getCurrentDateFrench() {
+            const date = new Date();
+            return date.toLocaleDateString('fr-FR');
+        }
+
+        // Load submission data from localStorage or URL parameters
+        function loadSubmissionData() {
+            // Try to get data from localStorage first
+            const submissionData = localStorage.getItem('submissionData');
+            
+            if (submissionData) {
+                const data = JSON.parse(submissionData);
+                
+                // Update client name
+                if (data.firstName && data.lastName) {
+                    document.getElementById('client-name').textContent = `${data.firstName} ${data.lastName}`;
+                } else if (data.company) {
+                    document.getElementById('client-name').textContent = data.company;
+                }
+
+                // Update project details
+                if (data.projectType) {
+                    document.getElementById('project-type').textContent = data.projectType;
+                }
+                if (data.projectSize) {
+                    document.getElementById('project-size').textContent = data.projectSize;
+                }
+                if (data.timeline) {
+                    document.getElementById('project-timeline').textContent = data.timeline;
+                }
+                if (data.contactMethod) {
+                    document.getElementById('contact-method').textContent = data.contactMethod;
+                }
+
+                // Clear the data from localStorage after use
+                localStorage.removeItem('submissionData');
+            }
+
+            // Set reference number and date
+            document.getElementById('reference-number').textContent = generateReferenceNumber();
+            document.getElementById('submission-date').textContent = getCurrentDateFrench();
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadSubmissionData();
+            
+            // Add entrance animation delay for cards
+            const cards = document.querySelectorAll('.fade-in');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('visible');
+                }, index * 200);
+            });
+        });
+
+        // Auto-redirect after 30 seconds (optional)
+        setTimeout(() => {
+            const shouldRedirect = confirm('Souhaitez-vous retourner à la page d\'accueil ?');
+            if (shouldRedirect) {
+                window.location.href = 'landing_page.html';
+            }
+        }, 30000);
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
